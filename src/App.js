@@ -18,15 +18,15 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-
+        
         {/* Approach #1 */}
         <Route path="/user">
            <Route index element={<UserDashboard />} />
            <Route path="profile" element={<UserProfile />} />
-           <Route path=":editId" element={<UserEditProfile />} />
-           <Route path="admin" element={<AdminDashboard />} />
+           <Route path=":editId" element={<UserEditProfile />} /> 
+           <Route path="admin" element={<AdminDashboard />} /> 
         </Route>
-
+        
         {/* Approach #2 */}
         <Route path="invoice/*" element={<Invoice  />} />
         <Route path="object_route/*" element={<RouteAsObj  />} />

@@ -5,7 +5,7 @@ import "./Style.css";
 const UserEditProfile = () => {
   let params = useParams();
   let navigate = useNavigate();
-
+    
   const handleClick =()=> {
      navigate('/user/profile');
   };

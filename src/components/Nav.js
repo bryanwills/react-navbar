@@ -28,9 +28,9 @@ const Nav = () => {
   }
   return (
   <div className='nav'>
-	  {isResponsiveclose === true ? <>
+	  {isResponsiveclose === true ? <> 
       <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiXCircle />   </span>
-    </> : <>
+    </> : <> 
       <span className="menubar__button" style={{ display: 'none' }} onClick={toggleClass} > <FiAlignRight />   </span>
     </>}
     <ul className={boxClass.join(' ')} >
@@ -40,13 +40,13 @@ const Nav = () => {
       {/* Approach #2 --- Active  */}
       <li>
         <NavLink onClick={toggleClass} style={({ isActive }) => {
-          return {
+          return { 
             color: isActive ? "#ffe500" : ""
           };
         }} to="/about">About</NavLink>
       </li>
       <li onClick={toggleSubmenu} className="sub__menus__arrows"><NavLink className={({ isActive }) => isActive ? "active" : ""} to="/user">Dashboard <FiChevronDown /> </NavLink>
-        <ul className={boxClassSubMenu.join(' ')} >
+        <ul className={boxClassSubMenu.join(' ')} > 
           <li><NavLink onClick={toggleClass} className={({ isActive }) => isActive ? "active" : ""} to="/user">User Dashboard</NavLink></li>
           <li><NavLink onClick={toggleClass} className={({ isActive }) => isActive ? "active" : ""} to="/user/admin">Admin Dashboard</NavLink></li>
         </ul>

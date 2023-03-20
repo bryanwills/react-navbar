@@ -20,7 +20,7 @@ const Invoice = () => {
           <Route path="review" element={<Review />}></Route>
           <Route path="order_details/:orderId" element={<OrderDetails />} />
         </Routes>
-      </div>
+      </div>      
       <Outlet />
     </div>
     )
